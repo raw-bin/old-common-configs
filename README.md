@@ -14,5 +14,8 @@ At present, the following items are covered:
 
     Symlink ~/.vim/vimrc -> the vimrc here. 
 
+2.  xmodmaprc
+
+    Symlink ~/.xmodmaprc -> the xmodmaprc here.
 
 xx
