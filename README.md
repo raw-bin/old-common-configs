@@ -10,7 +10,9 @@ personalised to my tastes and do use plugins that I like.
 
 At present, the following items are covered:
 
-1. vim
+1.  vim
+
+    Symlink ~/.vim/vimrc -> the vimrc here. 
 
 
 xx
