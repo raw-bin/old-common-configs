@@ -10,6 +10,7 @@ call vundle#rc()
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'gmarik/vundle'
 Bundle 'jlanzarotta/bufexplorer'
 Bundle 'myusuf3/numbers.vim'
@@ -33,6 +34,16 @@ set number
 set hlsearch
 set incsearch
 set smartcase
+
+" Colors
+let g:solarized_termcolors=256
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme solarized
+syntax enable
 
 " Advanced
 set showtabline=2
