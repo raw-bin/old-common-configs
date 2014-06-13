@@ -18,4 +18,8 @@ At present, the following items are covered:
 
     Symlink ~/.xmodmaprc -> the xmodmaprc here.
 
+3.  bash-snippets
+
+    source this file from your bashrc
+
 xx
