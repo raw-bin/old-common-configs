@@ -7,6 +7,12 @@ bind -m vi-insert 'Control-a: beginning-of-line'
 bind -m vi-insert 'Control-e: end-of-line'
 bind -m vi-insert '\C-w.: backward-kill-word'
 
+# FreeBSD - only utility function
+pcd () {
+	loc=$(whereis $1 | awk '{print $NF}')
+	cd $loc
+}
+
 # cdargs functions from their packages
 #
 # (C) 2002-2003 Dan Allen and Stefan Kamphausen
