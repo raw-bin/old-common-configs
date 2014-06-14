@@ -20,6 +20,6 @@ At present, the following items are covered:
 
 3.  bash-snippets
 
-    source this file from your bashrc
+    source this file from your bashrc to get vi mode and cdargs.
 
 xx
