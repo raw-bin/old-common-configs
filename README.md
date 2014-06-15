@@ -22,4 +22,9 @@ At present, the following items are covered:
 
     source this file from your bashrc to get vi mode and cdargs.
 
+4.  inputrc
+
+    Symlink ~/.inputrc -> the inputrc here. Makes backward-delete-word
+    work properly.
+
 xx
