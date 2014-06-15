@@ -49,5 +49,6 @@ syntax enable
 set showtabline=2
 set ruler
 let mapleader=","
+set backspace=indent,eol,start
 
 filetype plugin indent on     " required
