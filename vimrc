@@ -45,6 +45,11 @@ endif
 colorscheme solarized
 syntax enable
 
+" Swap, backup and undo files
+set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
+
 " Advanced
 set showtabline=2
 set ruler
