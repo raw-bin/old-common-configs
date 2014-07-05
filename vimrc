@@ -50,6 +50,9 @@ set undodir=~/.vim/undo//
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
 
+" File type specific mods
+autocmd BufEnter *.txt set fo=qwarntc tw=68 smartindent autoindent
+
 " Advanced
 set showtabline=2
 set ruler
