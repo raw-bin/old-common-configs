@@ -51,7 +51,8 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
 
 " File type specific mods
-autocmd BufEnter *.txt set fo=qwarntc tw=68 smartindent autoindent
+autocmd Filetype text set fo=qwarntc tw=68 autoindent nocindent nosmartindent
+autocmd Filetype mail set fo=qwarntc tw=68 autoindent nocindent nosmartindent
 
 " Advanced
 set showtabline=2
