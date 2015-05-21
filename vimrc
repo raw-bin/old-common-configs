@@ -43,6 +43,7 @@ else
     set background=dark
 endif
 colorscheme solarized
+highlight clear
 syntax enable
 
 " Swap, backup and undo files
