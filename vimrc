@@ -92,5 +92,6 @@ set showtabline=2
 set ruler
 let mapleader=","
 set backspace=indent,eol,start
+set timeout timeoutlen=3000 ttimeoutlen=100
 
 filetype plugin indent on     " required
