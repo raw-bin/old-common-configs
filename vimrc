@@ -94,4 +94,6 @@ let mapleader=","
 set backspace=indent,eol,start
 set timeout timeoutlen=3000 ttimeoutlen=100
 
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+
 filetype plugin indent on     " required
