@@ -34,6 +34,9 @@ Plugin 'rking/ag.vim'
 Plugin 'steffanc/cscopemaps.vim'
 Plugin 'tabular'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'vivien/vim-addon-linux-coding-style'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
