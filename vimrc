@@ -52,8 +52,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-
+"
 " General
 set linebreak
 set textwidth=72
@@ -70,8 +69,10 @@ set number
 set hlsearch
 set incsearch
 set smartcase
+"set autochdir
 
 " Colors
+set t_Co=256
 let g:solarized_termcolors=256
 if has('gui_running')
     set background=light
@@ -81,6 +82,8 @@ endif
 colorscheme solarized
 highlight clear
 syntax enable
+set laststatus=2
+set ttimeoutlen=50
 
 " Swap, backup and undo files
 set undodir=~/.vim/undo//
