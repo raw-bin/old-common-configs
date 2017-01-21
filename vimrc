@@ -52,7 +52,7 @@ set ttimeoutlen=50
 " Swap, backup and undo files
 set undodir=~/.vim/undo//
 set backupdir=~/.vim/backup//
-set directory=~/.vim/swp//
+set directory=~/.vim/swap//
 
 " File type specific mods
 autocmd Filetype text set fo=qwarntc tw=68 autoindent nocindent nosmartindent
