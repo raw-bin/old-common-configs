@@ -31,8 +31,9 @@ set cindent
 set number
 
 set hlsearch
-set incsearch
+set ignorecase
 set smartcase
+set incsearch
 "set autochdir
 
 " Colors
