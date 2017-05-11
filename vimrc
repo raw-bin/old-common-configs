@@ -39,14 +39,10 @@ set incsearch
 " Colors
 set t_Co=256
 let g:solarized_termcolors=256
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-colorscheme solarized
 highlight clear
 syntax enable
+set background=dark
+colorscheme solarized
 set laststatus=2
 set ttimeoutlen=50
 
