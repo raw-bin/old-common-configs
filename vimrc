@@ -65,6 +65,6 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 filetype plugin indent on     " required
 
-" Ctrlp mods
-let g:ctrlp_max_files = 0
-let g:ctrlp_clear_cache_on_exit = 0
+
+" FZF mods
+nnoremap <C-p> :FZF<CR>
