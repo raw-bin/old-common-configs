@@ -7,9 +7,12 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'myusuf3/numbers.vim'
 Plug 'rking/ag.vim'
 Plug 'steffanc/cscopemaps.vim'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'vivien/vim-addon-linux-coding-style'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-vinegar'
+Plug 'racer-rust/vim-racer'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -60,11 +63,27 @@ set ruler
 let mapleader=","
 set backspace=indent,eol,start
 set timeout timeoutlen=3000 ttimeoutlen=100
+set clipboard=unnamedplus
 
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
-filetype plugin indent on     " required
+" Rust
+set hidden
+let g:racer_cmd = "/home/robin/.cargo/bin/racer"
 
+" Custom keybindings
+noremap <leader>q :Ag <cword><CR>
+
+filetype plugin indent on     " required
 
 " FZF mods
 nnoremap <C-p> :FZF<CR>
+nnoremap <C-l> :Rg<CR>
+
+" Similarly, we can apply it to fzf#vim#grep. To use ripgrep instead of ag:
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
