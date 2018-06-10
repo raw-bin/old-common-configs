@@ -124,3 +124,4 @@ function! BGToggle()
 endfunction
 
 nnoremap <leader>t :call BGToggle()<cr>
+nnoremap <leader>w :Ag <cword><cr>
