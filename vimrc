@@ -20,7 +20,7 @@ call plug#end()
 
 " General
 set linebreak
-set textwidth=72
+set textwidth=120
 set shiftwidth=4
 set softtabstop=4
 set showmatch
