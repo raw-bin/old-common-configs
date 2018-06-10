@@ -129,3 +129,9 @@ map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
+
+function! BGToggle()
+    let &background = ( &background == "dark"? "light" : "dark" )
+endfunction
+
+nnoremap <leader>t :call BGToggle()<cr>
