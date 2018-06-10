@@ -1,0 +1,2 @@
+export PATH=$PATH:/home/robin/workspace/repos/redox/assets/redox-toolchains/971/install/usr/bin
+export PATH=$PATH:/home/robin/workspace/local-install/bin

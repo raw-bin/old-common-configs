@@ -1,0 +1,8 @@
+alias v='vim'
+alias ovpn='sudo python2 ~/workspace/repos/juniper-vpn-py/juniper-vpn.py -c ~/workspace/repos/juniper-vpn-py/vpn.cfg'
+alias oproxy='python2 ~/workspace/repos/juniper-vpn-py/juniper-vpn.py -c ~/workspace/repos/juniper-vpn-py/proxy.cfg'
+alias ag='ag --pager "less -R"'
+alias gs='git status'
+alias gl='git log'
+alias gd='git diff'
+alias gb='git branch'
