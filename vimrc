@@ -87,3 +87,20 @@ command! -bang -nargs=* Rg
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+
+nnoremap <C-w>p :call SplitOutPaneToggle()<CR>
+let g:pane_is_split_out = 0
+
+function! SplitOutPaneToggle()
+    if g:pane_is_split_out
+	let savex=winsaveview()
+	tabclose
+	call winrestview(savex)
+	let g:pane_is_split_out = 0
+    else
+	let savex=winsaveview()
+	tabedit %
+	let g:pane_is_split_out = 1
+	call winrestview(savex)
+    endif
+endfunction
