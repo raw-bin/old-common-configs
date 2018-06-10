@@ -106,3 +106,10 @@ function! SplitOutPaneToggle()
 	call winrestview(savex)
     endif
 endfunction
+
+function! OpenTerminal()
+   vsplit
+   :call term_start('bash', {'curwin' : 1, 'term_finish' : 'close'})
+endfunction
+
+nnoremap <C-w>t :call OpenTerminal()<cr>
