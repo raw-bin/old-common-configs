@@ -55,9 +55,11 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 
 " File type specific mods
-autocmd Filetype text	set fo=qwarntc tw=68 autoindent nocindent nosmartindent
-autocmd Filetype mail	set fo=qwarntc tw=68 autoindent nocindent nosmartindent
-autocmd Filetype python set ts=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+autocmd Filetype text	setlocal fo=qwarntc tw=68 autoindent nocindent nosmartindent
+autocmd Filetype mail	setlocal fo=qwarntc tw=68 autoindent nocindent nosmartindent
+autocmd Filetype cpp	setlocal fo=qwarntc tw=72 smartindent autoindent tabstop=4 shiftwidth=4 expandtab
+
+au BufEnter *.cpp setf cpp
 
 " Advanced
 set showtabline=2
