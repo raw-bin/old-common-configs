@@ -113,3 +113,7 @@ function! OpenTerminal()
 endfunction
 
 nnoremap <C-w>t :call OpenTerminal()<cr>
+
+" Auto resize splits when parent window size changes
+:autocmd VimResized * wincmd =
+
