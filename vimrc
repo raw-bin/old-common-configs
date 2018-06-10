@@ -13,6 +13,7 @@ Plug 'vivien/vim-addon-linux-coding-style'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-vinegar'
 Plug 'racer-rust/vim-racer'
+Plug 'haya14busa/incsearch.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -117,3 +118,15 @@ nnoremap <C-w>t :call OpenTerminal()<cr>
 " Auto resize splits when parent window size changes
 :autocmd VimResized * wincmd =
 
+" Incsearch plugin mods
+set hlsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+let g:incsearch#auto_nohlsearch = 1
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map *  <Plug>(incsearch-nohl-*)
+map #  <Plug>(incsearch-nohl-#)
+map g* <Plug>(incsearch-nohl-g*)
+map g# <Plug>(incsearch-nohl-g#)
