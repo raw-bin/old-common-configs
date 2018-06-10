@@ -36,6 +36,8 @@ set ignorecase
 set smartcase
 set incsearch
 "set autochdir
+set splitbelow
+set splitright
 
 " Colors
 set t_Co=256
