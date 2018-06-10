@@ -31,11 +31,9 @@ set smarttab
 set cindent
 set number
 
-set hlsearch
 set ignorecase
 set smartcase
 set incsearch
-"set autochdir
 set splitbelow
 set splitright
 
@@ -75,22 +73,11 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 set hidden
 let g:racer_cmd = "/home/robin/.cargo/bin/racer"
 
-" Custom keybindings
-noremap <leader>q :Ag <cword><CR>
-
 filetype plugin indent on     " required
 
 " FZF mods
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-l> :Rg<CR>
-
-" Similarly, we can apply it to fzf#vim#grep. To use ripgrep instead of ag:
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview('up:60%')
-  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
-  \   <bang>0)
 
 nnoremap <C-w>p :call SplitOutPaneToggle()<CR>
 let g:pane_is_split_out = 0
