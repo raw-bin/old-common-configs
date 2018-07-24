@@ -126,3 +126,4 @@ endfunction
 
 nnoremap <leader>t :call BGToggle()<cr>
 nnoremap <leader>q :Rg <cword><cr>
+nnoremap gF :vsplit <cfile><cr>
