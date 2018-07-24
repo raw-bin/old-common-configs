@@ -5,7 +5,7 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'myusuf3/numbers.vim'
-Plug 'rking/ag.vim'
+Plug 'jremmen/vim-ripgrep'
 Plug 'steffanc/cscopemaps.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -124,4 +124,4 @@ function! BGToggle()
 endfunction
 
 nnoremap <leader>t :call BGToggle()<cr>
-nnoremap <leader>w :Ag <cword><cr>
+nnoremap <leader>q :Rg <cword><cr>
