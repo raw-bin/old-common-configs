@@ -1,0 +1,4 @@
+source /home/robin/workspace/repos/common-configs/bash_aliases
+source /home/robin/workspace/repos/common-configs/bash_envs
+source /home/robin/workspace/repos/common-configs/bash_paths
+source /home/robin/workspace/repos/common-configs/bash_sources
