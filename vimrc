@@ -14,6 +14,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'racer-rust/vim-racer'
 Plug 'haya14busa/incsearch.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'felixhummel/setcolors.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
